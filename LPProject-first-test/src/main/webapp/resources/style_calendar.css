@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 100vh;
+	max-width: 100vw;
+	background-color: ivory;
+}
+/* -------------------------------------------- */
+.leftBox {
+	width: 25%;
+	height: 100vh;
+}
+
+.leftBox>div {
+	margin: 5px;
+}
+
+.logo {
+	background-color: bisque;
+	float: left;
+}
+
+.year-month {
+	background-color: ivory;
+	float: right;
+	float: center;
+}
+
+.box-dDay {
+	background-color: bisque;
+	clear: both;
+}
+
+.box-search {
+	background-color: slategrey;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+}
+
+.box-search input[type="search"] {
+	border: 0px;
+	background-color: transparent; /* 배경 투명색 */
+	padding: .8em .5em;
+	outline-style: none; /* 포커스 박스 스타일 제 */
+}
+
+.box-widget {
+	background-color: bisque;
+}
+
+/* -------------------------------------------- */
+.calendarBox {
+	padding: 5px; width : 100%;
+	height: 100vh;
+	width: 100%;
+}
+
+.week, .date {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.week {
+	justify-items: center;
+	align-items: center;
+	height: 30px;
+	margin-bottom: 10px;
+	background-color: pink;
+	border-radius: 5px;
+}
+
+.date {
+	height: 95%;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	border-radius: 5px;
+}
+
+.date>div {
+	padding: 5px;
+	border: 1px solid grey;
+	border-left: none;
+	border-top: none;
+}
+
+.dateBtn {
+	all: unset; /* 기존 버튼 디자인 제거 */
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    cursor: pointer; /* 영역에 마우스 대면 손가락커서로 변형 */
+}
+
+.wrapDateBtn:hover{
+	background-color: #00000007;
+}
+/* -------------------------------------------- */
+.rightBox {
+	background-color: bisque;
+	width: 5%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+.emptyBox{
+	height: 50%;
+    width: 100%;
+}
+
+.wrapRightBtn{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapRightBtn>button{
+	all:unset;
+	cursor: pointer;
+}
+i{
+	font-size: 20px;
+}
